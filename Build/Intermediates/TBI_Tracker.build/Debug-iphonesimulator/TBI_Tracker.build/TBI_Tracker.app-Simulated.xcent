@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application-identifier</key>
+	<string>NQ93LA4599.com.aishwarya.TBI-Tracker</string>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>NQ93LA4599.com.aishwarya.TBI-Tracker</string>
+	</array>
+</dict>
+</plist>
