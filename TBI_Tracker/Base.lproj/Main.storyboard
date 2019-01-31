@@ -20,7 +20,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="K+" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Glucose" image="second" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +52,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LmO-eN-O52"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="qOC-CW-88n"/>
+                    <tabBarItem key="tabBarItem" title="Lactate" id="qOC-CW-88n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jx5-h2-AKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,9 +97,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiB-Ym-Cvt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiB-Ym-Cvt">
                                 <rect key="frame" x="392" y="675" width="284" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="individual plots -&gt;"/>
                                 <connections>
@@ -108,6 +107,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1lz-MO-QJH" firstAttribute="trailing" secondItem="HiB-Ym-Cvt" secondAttribute="trailing" constant="348" id="SjH-2J-QI3"/>
+                            <constraint firstItem="1lz-MO-QJH" firstAttribute="bottom" secondItem="HiB-Ym-Cvt" secondAttribute="bottom" constant="36" id="ghc-xJ-QZl"/>
+                            <constraint firstItem="HiB-Ym-Cvt" firstAttribute="leading" secondItem="1lz-MO-QJH" secondAttribute="leading" constant="392" id="tQa-T1-eIU"/>
+                            <constraint firstItem="HiB-Ym-Cvt" firstAttribute="top" secondItem="1lz-MO-QJH" secondAttribute="top" constant="655" id="y0e-7M-4lE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1lz-MO-QJH"/>
                     </view>
                 </viewController>
