@@ -71,7 +71,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="eTy-7g-LDz"/>
+                                    <segue destination="qIy-38-aBU" kind="show" id="pPB-X2-6fp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -87,12 +87,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovh-AD-f6F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-796" y="0.0"/>
+            <point key="canvasLocation" x="-1463" y="0.0"/>
         </scene>
         <!--allPlots-->
+        <scene sceneID="1ZD-4G-exe">
+            <objects>
+                <viewController title="allPlots" id="qIy-38-aBU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fiN-xf-wQG">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1lz-MO-QJH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMI-Mc-SEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743" y="0.0"/>
+        </scene>
+        <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController title="allPlots" id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
