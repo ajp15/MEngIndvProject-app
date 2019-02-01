@@ -67,7 +67,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhI-yn-3a1">
-                                <rect key="frame" x="464" y="356" width="96" height="57"/>
+                                <rect key="frame" x="464" y="406" width="96" height="7"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
@@ -88,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovh-AD-f6F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-738.8671875" y="0.0"/>
+            <point key="canvasLocation" x="-745" y="0.0"/>
         </scene>
         <!--allPlots-->
         <scene sceneID="1ZD-4G-exe">
@@ -99,19 +99,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiB-Ym-Cvt">
-                                <rect key="frame" x="392" y="725" width="284" height="7"/>
+                                <rect key="frame" x="710" y="725" width="284" height="7"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="individual plots -&gt;"/>
                                 <connections>
                                     <segue destination="49e-Tb-3d3" kind="show" id="FAi-18-CPx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9q-q0-O6v">
+                                <rect key="frame" x="30" y="725" width="138" height="7"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <segue destination="gvJ-ih-RlU" kind="show" id="kul-Bv-aoL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.94901960784313721" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1lz-MO-QJH" firstAttribute="trailing" secondItem="HiB-Ym-Cvt" secondAttribute="trailing" constant="348" id="SjH-2J-QI3"/>
+                            <constraint firstItem="1lz-MO-QJH" firstAttribute="bottom" secondItem="e9q-q0-O6v" secondAttribute="bottom" constant="36" id="Ll5-iZ-xUq"/>
+                            <constraint firstItem="e9q-q0-O6v" firstAttribute="leading" secondItem="fiN-xf-wQG" secondAttribute="leading" constant="30" id="dEG-tq-wlG"/>
                             <constraint firstItem="1lz-MO-QJH" firstAttribute="bottom" secondItem="HiB-Ym-Cvt" secondAttribute="bottom" constant="36" id="ghc-xJ-QZl"/>
-                            <constraint firstItem="HiB-Ym-Cvt" firstAttribute="leading" secondItem="1lz-MO-QJH" secondAttribute="leading" constant="392" id="tQa-T1-eIU"/>
+                            <constraint firstItem="1lz-MO-QJH" firstAttribute="trailing" secondItem="HiB-Ym-Cvt" secondAttribute="trailing" constant="30" id="hmD-sp-Pje"/>
+                            <constraint firstItem="e9q-q0-O6v" firstAttribute="top" secondItem="1lz-MO-QJH" secondAttribute="top" constant="655" id="xb5-Qp-vse"/>
                             <constraint firstItem="HiB-Ym-Cvt" firstAttribute="top" secondItem="1lz-MO-QJH" secondAttribute="top" constant="655" id="y0e-7M-4lE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1lz-MO-QJH"/>
@@ -157,7 +167,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSL-h2-OU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-19.3359375" y="0.0"/>
+            <point key="canvasLocation" x="-4" y="0.0"/>
         </scene>
     </scenes>
 </document>
