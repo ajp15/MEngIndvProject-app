@@ -70,6 +70,9 @@
                                 <rect key="frame" x="464" y="406" width="96" height="7"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="Log in"/>
+                                <connections>
+                                    <segue destination="qIy-38-aBU" kind="show" id="HY6-4G-i7c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.94901960784313721" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,29 +99,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiB-Ym-Cvt">
-                                <rect key="frame" x="710" y="675" width="284" height="57"/>
+                                <rect key="frame" x="710" y="725" width="284" height="7"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="individual plots -&gt;"/>
                                 <connections>
                                     <segue destination="49e-Tb-3d3" kind="show" id="FAi-18-CPx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9q-q0-O6v">
-                                <rect key="frame" x="30" y="675" width="138" height="57"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="Sign Out"/>
-                                <connections>
-                                    <segue destination="FoM-2q-VLt" kind="show" id="kul-Bv-aoL"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.94901960784313721" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1lz-MO-QJH" firstAttribute="bottom" secondItem="e9q-q0-O6v" secondAttribute="bottom" constant="36" id="Ll5-iZ-xUq"/>
-                            <constraint firstItem="e9q-q0-O6v" firstAttribute="leading" secondItem="fiN-xf-wQG" secondAttribute="leading" constant="30" id="dEG-tq-wlG"/>
                             <constraint firstItem="1lz-MO-QJH" firstAttribute="bottom" secondItem="HiB-Ym-Cvt" secondAttribute="bottom" constant="36" id="ghc-xJ-QZl"/>
                             <constraint firstItem="1lz-MO-QJH" firstAttribute="trailing" secondItem="HiB-Ym-Cvt" secondAttribute="trailing" constant="30" id="hmD-sp-Pje"/>
-                            <constraint firstItem="e9q-q0-O6v" firstAttribute="top" secondItem="1lz-MO-QJH" secondAttribute="top" constant="655" id="xb5-Qp-vse"/>
                             <constraint firstItem="HiB-Ym-Cvt" firstAttribute="top" secondItem="1lz-MO-QJH" secondAttribute="top" constant="655" id="y0e-7M-4lE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1lz-MO-QJH"/>
