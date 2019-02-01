@@ -93,7 +93,29 @@
                     <view key="view" contentMode="scaleToFill" id="7Dd-Fs-cGM" userLabel="LactateView">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ywG-JH-Bzl">
+                                <rect key="frame" x="0.0" y="70" width="1024" height="648"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lactate Concentration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugt-DT-BDi">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohz-x5-Noz" userLabel="LactateGraph">
+                                        <rect key="frame" x="0.0" y="42" width="1024" height="606"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.94901960784313721" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LmO-eN-O52" firstAttribute="bottom" secondItem="ywG-JH-Bzl" secondAttribute="bottom" id="4hR-nx-wmE"/>
+                            <constraint firstItem="LmO-eN-O52" firstAttribute="trailing" secondItem="ywG-JH-Bzl" secondAttribute="trailing" id="Xbe-Ld-I4b"/>
+                            <constraint firstItem="ywG-JH-Bzl" firstAttribute="top" secondItem="LmO-eN-O52" secondAttribute="top" id="x2R-Kk-AgM"/>
+                            <constraint firstItem="ywG-JH-Bzl" firstAttribute="leading" secondItem="LmO-eN-O52" secondAttribute="leading" id="xlF-zN-Qse"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LmO-eN-O52"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Lactate" id="qOC-CW-88n"/>
