@@ -55,7 +55,29 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW" userLabel="GlucoseView">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YwW-Nb-VVb">
+                                <rect key="frame" x="0.0" y="70" width="1024" height="648"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glucose Concentration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tj-WF-zdA">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ab2-wo-5AY" userLabel="GlucoseGraph">
+                                        <rect key="frame" x="0.0" y="42" width="1024" height="606"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.94901960784313721" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YwW-Nb-VVb" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="Ehd-0P-k7G"/>
+                            <constraint firstItem="YwW-Nb-VVb" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="SNr-A0-Lx6"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="YwW-Nb-VVb" secondAttribute="trailing" id="XQQ-NP-Nm2"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="YwW-Nb-VVb" secondAttribute="bottom" id="yzi-li-zp8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Glucose" id="cPa-gy-q4n"/>
@@ -131,6 +153,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.94901960784313721" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="HiB-Ym-Cvt" firstAttribute="leading" secondItem="1lz-MO-QJH" secondAttribute="leading" constant="710" id="Nwu-HZ-QtA"/>
                             <constraint firstItem="1lz-MO-QJH" firstAttribute="bottom" secondItem="HiB-Ym-Cvt" secondAttribute="bottom" constant="36" id="ghc-xJ-QZl"/>
                             <constraint firstItem="1lz-MO-QJH" firstAttribute="trailing" secondItem="HiB-Ym-Cvt" secondAttribute="trailing" constant="30" id="hmD-sp-Pje"/>
                             <constraint firstItem="HiB-Ym-Cvt" firstAttribute="top" secondItem="1lz-MO-QJH" secondAttribute="top" constant="655" id="y0e-7M-4lE"/>
