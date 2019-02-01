@@ -17,7 +17,29 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN" userLabel="K+View">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ofT-Rn-sLh">
+                                <rect key="frame" x="0.0" y="70" width="1024" height="648"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Potassium Ion Concentration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjV-pN-Dj2">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-8J-neG" userLabel="K+Graph">
+                                        <rect key="frame" x="0.0" y="42" width="1024" height="606"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.94901960784313721" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="ofT-Rn-sLh" secondAttribute="trailing" id="O1G-4R-O4q"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="ofT-Rn-sLh" secondAttribute="bottom" id="gYQ-UU-V1J"/>
+                            <constraint firstItem="ofT-Rn-sLh" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="ne3-XS-IzK"/>
+                            <constraint firstItem="ofT-Rn-sLh" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="zoU-xc-1Ao"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="K+" id="acW-dT-cKf"/>
