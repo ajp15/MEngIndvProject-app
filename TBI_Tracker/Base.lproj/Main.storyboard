@@ -88,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovh-AD-f6F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714.84375" y="28.90625"/>
+            <point key="canvasLocation" x="715" y="0.0"/>
         </scene>
         <!--allPlots-->
         <scene sceneID="1ZD-4G-exe">
@@ -156,7 +156,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhL-uG-dsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9.375" y="28.90625"/>
+            <point key="canvasLocation" x="-9" y="0.0"/>
         </scene>
     </scenes>
 </document>
