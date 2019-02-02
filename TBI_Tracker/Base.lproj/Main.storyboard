@@ -189,11 +189,14 @@
                         <viewLayoutGuide key="safeArea" id="1lz-MO-QJH"/>
                     </view>
                     <navigationItem key="navigationItem" id="NA6-1o-543">
-                        <barButtonItem key="rightBarButtonItem" title="Individual Plots &gt;" id="ldx-6F-g51">
-                            <connections>
-                                <segue destination="49e-Tb-3d3" kind="show" id="7pX-8x-xlJ"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Individual Plots &gt;" id="ldx-6F-g51">
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="7pX-8x-xlJ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="sXo-Qw-C3V"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMI-Mc-SEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
