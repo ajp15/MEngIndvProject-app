@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ofT-Rn-sLh">
-                                <rect key="frame" x="0.0" y="70" width="1024" height="648"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Potassium Ion Concentration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjV-pN-Dj2">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
@@ -28,7 +28,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-8J-neG" userLabel="K+Graph">
-                                        <rect key="frame" x="0.0" y="42" width="1024" height="606"/>
+                                        <rect key="frame" x="0.0" y="42" width="1024" height="656"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YwW-Nb-VVb">
-                                <rect key="frame" x="0.0" y="70" width="1024" height="648"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glucose Concentration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tj-WF-zdA">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
@@ -66,7 +66,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ab2-wo-5AY" userLabel="GlucoseGraph">
-                                        <rect key="frame" x="0.0" y="42" width="1024" height="606"/>
+                                        <rect key="frame" x="0.0" y="42" width="1024" height="656"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -95,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ywG-JH-Bzl">
-                                <rect key="frame" x="0.0" y="70" width="1024" height="648"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lactate Concentration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugt-DT-BDi">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
@@ -104,7 +104,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohz-x5-Noz" userLabel="LactateGraph">
-                                        <rect key="frame" x="0.0" y="42" width="1024" height="606"/>
+                                        <rect key="frame" x="0.0" y="42" width="1024" height="656"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -156,29 +156,35 @@
             </objects>
             <point key="canvasLocation" x="715" y="0.0"/>
         </scene>
-        <!--allPlots-->
+        <!--chemComp-->
         <scene sceneID="1ZD-4G-exe">
             <objects>
-                <viewController title="allPlots" id="qIy-38-aBU" sceneMemberID="viewController">
+                <viewController title="allPlots" id="qIy-38-aBU" userLabel="chemComp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fiN-xf-wQG">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiB-Ym-Cvt">
-                                <rect key="frame" x="710" y="725" width="284" height="7"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="individual plots -&gt;"/>
-                                <connections>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="FAi-18-CPx"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sq3-lL-WA6">
+                                <rect key="frame" x="0.0" y="70" width="1024" height="698"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemical Composition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VV2-eh-l7A">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTp-O8-ntC">
+                                        <rect key="frame" x="0.0" y="42" width="1024" height="656"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.94901960784313721" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="HiB-Ym-Cvt" firstAttribute="leading" secondItem="1lz-MO-QJH" secondAttribute="leading" constant="710" id="Nwu-HZ-QtA"/>
-                            <constraint firstItem="1lz-MO-QJH" firstAttribute="bottom" secondItem="HiB-Ym-Cvt" secondAttribute="bottom" constant="36" id="ghc-xJ-QZl"/>
-                            <constraint firstItem="1lz-MO-QJH" firstAttribute="trailing" secondItem="HiB-Ym-Cvt" secondAttribute="trailing" constant="30" id="hmD-sp-Pje"/>
-                            <constraint firstItem="HiB-Ym-Cvt" firstAttribute="top" secondItem="1lz-MO-QJH" secondAttribute="top" constant="655" id="y0e-7M-4lE"/>
+                            <constraint firstItem="Sq3-lL-WA6" firstAttribute="top" secondItem="1lz-MO-QJH" secondAttribute="top" id="0po-xD-CWG"/>
+                            <constraint firstItem="1lz-MO-QJH" firstAttribute="bottom" secondItem="Sq3-lL-WA6" secondAttribute="bottom" id="3ex-iW-c0A"/>
+                            <constraint firstItem="Sq3-lL-WA6" firstAttribute="leading" secondItem="1lz-MO-QJH" secondAttribute="leading" id="TO2-vq-iUj"/>
+                            <constraint firstItem="1lz-MO-QJH" firstAttribute="trailing" secondItem="Sq3-lL-WA6" secondAttribute="trailing" id="YXA-1z-rek"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1lz-MO-QJH"/>
                     </view>
