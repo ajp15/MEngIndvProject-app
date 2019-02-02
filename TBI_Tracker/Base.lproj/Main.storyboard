@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ofT-Rn-sLh">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
+                                <rect key="frame" x="0.0" y="70" width="1024" height="648"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Potassium Ion Concentration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjV-pN-Dj2">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
@@ -28,7 +28,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-8J-neG" userLabel="K+Graph">
-                                        <rect key="frame" x="0.0" y="42" width="1024" height="656"/>
+                                        <rect key="frame" x="0.0" y="42" width="1024" height="606"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YwW-Nb-VVb">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
+                                <rect key="frame" x="0.0" y="70" width="1024" height="648"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glucose Concentration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tj-WF-zdA">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
@@ -66,7 +66,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ab2-wo-5AY" userLabel="GlucoseGraph">
-                                        <rect key="frame" x="0.0" y="42" width="1024" height="656"/>
+                                        <rect key="frame" x="0.0" y="42" width="1024" height="606"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -95,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ywG-JH-Bzl">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
+                                <rect key="frame" x="0.0" y="70" width="1024" height="648"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lactate Concentration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugt-DT-BDi">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
@@ -104,7 +104,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohz-x5-Noz" userLabel="LactateGraph">
-                                        <rect key="frame" x="0.0" y="42" width="1024" height="656"/>
+                                        <rect key="frame" x="0.0" y="42" width="1024" height="606"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -188,7 +188,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1lz-MO-QJH"/>
                     </view>
-                    <navigationItem key="navigationItem" id="NA6-1o-543"/>
+                    <navigationItem key="navigationItem" id="NA6-1o-543">
+                        <barButtonItem key="rightBarButtonItem" title="Individual Plots &gt;" id="ldx-6F-g51">
+                            <connections>
+                                <segue destination="49e-Tb-3d3" kind="show" id="7pX-8x-xlJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMI-Mc-SEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
