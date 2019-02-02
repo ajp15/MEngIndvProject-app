@@ -132,22 +132,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhI-yn-3a1">
-                                <rect key="frame" x="464" y="406" width="96" height="7"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhI-yn-3a1">
+                                <rect key="frame" x="464" y="649" width="96" height="7"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
                                     <segue destination="qIy-38-aBU" kind="show" id="HY6-4G-i7c"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="curvedRectWoShadow" translatesAutoresizingMaskIntoConstraints="NO" id="z1Z-yc-4rJ">
+                                <rect key="frame" x="237" y="259" width="550" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.94901960784313721" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="VAp-S4-PaY" firstAttribute="bottom" secondItem="WhI-yn-3a1" secondAttribute="bottom" constant="355" id="DiQ-Sq-GBU"/>
-                            <constraint firstItem="WhI-yn-3a1" firstAttribute="leading" secondItem="VAp-S4-PaY" secondAttribute="leading" constant="464" id="QlX-vt-8aQ"/>
-                            <constraint firstItem="VAp-S4-PaY" firstAttribute="trailing" secondItem="WhI-yn-3a1" secondAttribute="trailing" constant="464" id="VzO-o7-QEQ"/>
-                            <constraint firstItem="WhI-yn-3a1" firstAttribute="top" secondItem="VAp-S4-PaY" secondAttribute="top" constant="336" id="v4f-sa-gdD"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VAp-S4-PaY"/>
                     </view>
                     <navigationItem key="navigationItem" id="KAy-aF-WjR"/>
@@ -241,4 +240,7 @@
             <point key="canvasLocation" x="-9" y="0.0"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="curvedRectWoShadow" width="570" height="270"/>
+    </resources>
 </document>
