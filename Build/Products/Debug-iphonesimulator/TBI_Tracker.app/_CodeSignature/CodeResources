@@ -4,21 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AppIcon60x60@2x.png</key>
-		<data>
-		8C0ddvT38jzOQwVYEy8H39bAOBA=
-		</data>
-		<key>AppIcon76x76@2x~ipad.png</key>
-		<data>
-		+bmqoVTklJu6AvTvIwxPAYSJec0=
-		</data>
 		<key>Assets.car</key>
 		<data>
 		+rxx1d6uGC6/ClXVJ+VRIe+6EvY=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		d0SHUeGKYvoi8Jbvf8LoHFZ6/Ho=
+		Mwky35DQlX+vSYKxF8kW+y4WfCs=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -26,15 +18,15 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		RHRRydE50tyMVPrOxlk57Kzh7sI=
+		E1nk+EPH0cNN5h+cdxf8UIH1qQU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/8rJ-Kc-sve-view-QS5-Rx-YEW.nib</key>
 		<data>
-		OApz737yd1EgwGYzFtVmd8LxnmU=
+		Mc5FnKbQufgBA5I1fjX7wK7dJTc=
 		</data>
 		<key>Base.lproj/Main.storyboardc/9pv-A4-QxB-view-tsR-hK-woN.nib</key>
 		<data>
-		1AC23K4vZJl13VYbvFJnLvFDfJE=
+		1Eq8KDXF0kxWkcWs3kKFXp/OE1c=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -42,27 +34,27 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-FoM-2q-VLt.nib</key>
 		<data>
-		v87rNXP7WE1OcvOabGaJwhJMt8s=
+		grO81ov6SqWB6tV5lB+H+fzu4Yo=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-49e-Tb-3d3.nib</key>
 		<data>
-		aYfrtu7lAkERdrOylbsptptYxC8=
+		FYqeIF0yGSxhGdxzE1peL8iGC7M=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-qIy-38-aBU.nib</key>
 		<data>
-		+S3gyUI+IuVKW1gav0A/jlN4b1w=
+		FsLgXjeIhgyc4pX+3kSvh8skvNU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Yhn-1k-knS-view-7Dd-Fs-cGM.nib</key>
 		<data>
-		OVzlFVwVYQVQTFQN+ZAKbTOsXUk=
+		x5q3L12dYhE7fuXYo891uMkkN0o=
 		</data>
 		<key>Base.lproj/Main.storyboardc/gvJ-ih-RlU-view-tlk-Sf-iec.nib</key>
 		<data>
-		JQclDXgMsA/vm5Algf3xlDh9igs=
+		r7aTj9j9KY+IZsMX7tirC1hk6XA=
 		</data>
 		<key>Base.lproj/Main.storyboardc/qIy-38-aBU-view-fiN-xf-wQG.nib</key>
 		<data>
-		uWo/UvOXfFmQEAKSy8QcnYA7584=
+		8vY0CVgKNotiurszGp+X38aSjiI=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -127,20 +119,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AppIcon60x60@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mVP7aPZ+/yUIQzoiFdLj5a2AzdWqBtloyYySkCwlx4c=
-			</data>
-		</dict>
-		<key>AppIcon76x76@2x~ipad.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SKQj1alq8L81VGMiclALwKHESA4hpLVZ4OPzj/ddhQQ=
-			</data>
-		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
@@ -152,7 +130,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			flSxQu2SHH4An/RCmf3lEVmy1HPHZYZzuSd1vo3K5do=
+			Z9OOtgTfWN5+p5BrTRxdF6zELH2WF++vE6oN95Nq9FU=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -166,21 +144,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B0WRZIF9rYSPJGvchIIC30nkiqXtvSM+wblY9GcZKw0=
+			/IXbZH+H85PqJjRKB2Hq1F9kW7zDa1swvfwC/DXOVYw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/8rJ-Kc-sve-view-QS5-Rx-YEW.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mlaaJyI57BgCNKePbJ3juta69oMOGzriGZDOTTZFf3Q=
+			VHReq0PkyCF55nIqxaYKiGn70HgXsyQJ0g6Len0jvmU=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/9pv-A4-QxB-view-tsR-hK-woN.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ChPW5hPGcY3RvjP/Q9U7LdLf63sHUSZ74UNtoXmApDU=
+			RLXRAt4jCqh6nGYVMwkGBvMO+4gTO/rShuMNg7kZDTo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -194,42 +172,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			toi9U3s6qnrEJUYozeCe1Daor0unn5fkpS5qdgk/Kic=
+			pKL0aofVq3Iku7aY80dv+9sCMrutKMKaUuqc7IiF/lw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-49e-Tb-3d3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0OAoLBufq0/OlnYlFl4Z9sC6L0kHWZtKIK+7PotIbDs=
+			Qxsq4k0k/R+2AZL1CZgg9bZ+z1doWlgB6Bm+Mg95foU=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-qIy-38-aBU.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nu1MYNzoYX+wu68JnGEi2ywgtwM/hDS9Wngx/xkBms0=
+			nVb2KvA9VOlTYuXRW7y0u/iqXFZAnxlrzaY073JphfI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Yhn-1k-knS-view-7Dd-Fs-cGM.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			caNFXMgSZzTOnrpjAVkc3tGeBHdefWZwBKnhAIsn8+I=
+			KAd9ck6tQFbleVCDo7lo4mrWGy1/mbwwCe0hQe/p2X0=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/gvJ-ih-RlU-view-tlk-Sf-iec.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yVipAzzV+GePcBOLL8JAG6ivvAX3/9K8/3oxel0st5I=
+			l7wcPxEobPd4bqBClNrchUoPyAdl+kxFNJmiN0axXkE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/qIy-38-aBU-view-fiN-xf-wQG.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Zot6247kYyrQHGEh19oeafhmYcAa0gRjCabCuhHMAo=
+			rk3c+QBUyrSnH25kh1wUJupdqYKFl+FOh+RRrVnti8Y=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
