@@ -134,10 +134,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curvedRectWoShadow" translatesAutoresizingMaskIntoConstraints="NO" id="z1Z-yc-4rJ">
                                 <rect key="frame" x="281" y="292" width="550" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="550" id="0k3-Bg-y1d"/>
-                                    <constraint firstAttribute="height" constant="250" id="ffA-Qu-cV3"/>
-                                </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H5E-AC-DLo">
                                 <rect key="frame" x="459.5" y="348" width="322" height="27"/>
@@ -145,7 +141,6 @@
                                 <color key="tintColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="8Y4-K5-j0O"/>
-                                    <constraint firstAttribute="width" constant="322" id="Q02-Eb-bSE"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -156,7 +151,6 @@
                                 <color key="backgroundColor" white="0.86536815068493156" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="LZ5-mt-Fn2"/>
-                                    <constraint firstAttribute="width" constant="322" id="So7-pM-Xa2"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -194,17 +188,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.94901960784313721" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="z1Z-yc-4rJ" firstAttribute="centerX" secondItem="tlk-Sf-iec" secondAttribute="centerX" id="4BF-W2-9Ir"/>
+                            <constraint firstItem="VAp-S4-PaY" firstAttribute="trailing" secondItem="H5E-AC-DLo" secondAttribute="trailing" constant="330.5" id="4v5-Zj-xpb"/>
                             <constraint firstItem="H5E-AC-DLo" firstAttribute="centerY" secondItem="7s8-ef-sky" secondAttribute="centerY" id="5qg-5d-I5n"/>
                             <constraint firstItem="ru6-WY-bwf" firstAttribute="centerY" secondItem="Dos-UZ-GDH" secondAttribute="centerY" id="FMz-ix-dI0"/>
                             <constraint firstItem="ru6-WY-bwf" firstAttribute="leading" secondItem="Dos-UZ-GDH" secondAttribute="trailing" constant="49" id="HIu-6S-z9s"/>
+                            <constraint firstItem="VAp-S4-PaY" firstAttribute="trailing" secondItem="z1Z-yc-4rJ" secondAttribute="trailing" constant="281" id="MhC-l0-ac4"/>
                             <constraint firstItem="7s8-ef-sky" firstAttribute="top" secondItem="VAp-S4-PaY" secondAttribute="top" constant="278" id="NS2-1g-Tc2"/>
                             <constraint firstItem="Dos-UZ-GDH" firstAttribute="centerX" secondItem="7s8-ef-sky" secondAttribute="centerX" id="OsG-kj-ZNa"/>
                             <constraint firstItem="ru6-WY-bwf" firstAttribute="centerX" secondItem="H5E-AC-DLo" secondAttribute="centerX" id="PBc-uR-PAy"/>
                             <constraint firstItem="Dos-UZ-GDH" firstAttribute="top" secondItem="7s8-ef-sky" secondAttribute="bottom" constant="28.5" id="fMV-Cc-SLq"/>
                             <constraint firstItem="7s8-ef-sky" firstAttribute="leading" secondItem="VAp-S4-PaY" secondAttribute="leading" constant="310" id="jHb-1f-JCt"/>
+                            <constraint firstItem="z1Z-yc-4rJ" firstAttribute="top" secondItem="VAp-S4-PaY" secondAttribute="top" constant="222" id="ln1-4P-xLG"/>
+                            <constraint firstItem="VAp-S4-PaY" firstAttribute="trailing" secondItem="ru6-WY-bwf" secondAttribute="trailing" constant="330.5" id="n48-rP-hWY"/>
                             <constraint firstItem="Dos-UZ-GDH" firstAttribute="centerY" secondItem="tlk-Sf-iec" secondAttribute="centerY" id="pvj-Ez-2vK"/>
-                            <constraint firstItem="z1Z-yc-4rJ" firstAttribute="centerY" secondItem="tlk-Sf-iec" secondAttribute="centerY" id="sny-V8-Ate"/>
+                            <constraint firstItem="VAp-S4-PaY" firstAttribute="bottom" secondItem="z1Z-yc-4rJ" secondAttribute="bottom" constant="292" id="x5E-1G-fif"/>
+                            <constraint firstItem="z1Z-yc-4rJ" firstAttribute="leading" secondItem="VAp-S4-PaY" secondAttribute="leading" constant="281" id="yMg-20-bws"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VAp-S4-PaY"/>
                     </view>
