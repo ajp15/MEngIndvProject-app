@@ -174,9 +174,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhI-yn-3a1">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhI-yn-3a1">
                                 <rect key="frame" x="491" y="463" width="130" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="hKW-uG-EhC"/>
+                                    <constraint firstAttribute="height" constant="30" id="ikf-28-tzz"/>
+                                </constraints>
                                 <state key="normal" image="loginButton">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -196,11 +199,13 @@
                             <constraint firstItem="Dos-UZ-GDH" firstAttribute="centerX" secondItem="7s8-ef-sky" secondAttribute="centerX" id="OsG-kj-ZNa"/>
                             <constraint firstItem="ru6-WY-bwf" firstAttribute="centerX" secondItem="H5E-AC-DLo" secondAttribute="centerX" id="PBc-uR-PAy"/>
                             <constraint firstItem="Dos-UZ-GDH" firstAttribute="top" secondItem="7s8-ef-sky" secondAttribute="bottom" constant="28.5" id="fMV-Cc-SLq"/>
+                            <constraint firstItem="VAp-S4-PaY" firstAttribute="bottom" secondItem="WhI-yn-3a1" secondAttribute="bottom" constant="341" id="i9Y-S4-rkZ"/>
                             <constraint firstItem="7s8-ef-sky" firstAttribute="leading" secondItem="VAp-S4-PaY" secondAttribute="leading" constant="310" id="jHb-1f-JCt"/>
                             <constraint firstItem="z1Z-yc-4rJ" firstAttribute="top" secondItem="VAp-S4-PaY" secondAttribute="top" constant="222" id="ln1-4P-xLG"/>
                             <constraint firstItem="VAp-S4-PaY" firstAttribute="trailing" secondItem="ru6-WY-bwf" secondAttribute="trailing" constant="330.5" id="n48-rP-hWY"/>
                             <constraint firstItem="Dos-UZ-GDH" firstAttribute="centerY" secondItem="tlk-Sf-iec" secondAttribute="centerY" id="pvj-Ez-2vK"/>
                             <constraint firstItem="VAp-S4-PaY" firstAttribute="bottom" secondItem="z1Z-yc-4rJ" secondAttribute="bottom" constant="292" id="x5E-1G-fif"/>
+                            <constraint firstItem="WhI-yn-3a1" firstAttribute="centerX" secondItem="tlk-Sf-iec" secondAttribute="centerX" id="xcT-b8-nmd"/>
                             <constraint firstItem="z1Z-yc-4rJ" firstAttribute="leading" secondItem="VAp-S4-PaY" secondAttribute="leading" constant="281" id="yMg-20-bws"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VAp-S4-PaY"/>
