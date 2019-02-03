@@ -1,7 +1,10 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "ba42f48af3c5aecc54ed22170b0f07dc"
-build_time: [1548952055, 293580000]
+build_time: [1549191075, 825771000]
 inputs:
-  "/Users/aishwaryapattar/OneDrive - Imperial College London/Year 4/Project/4. App Development/TBI_Tracker/TBI_Tracker/SecondViewController.swift": [1548952041, 0]
+  "/Users/aishwaryapattar/OneDrive - Imperial College London/Year 4/Project/4. App Development/TBI_Tracker/TBI_Tracker/GlucoseViewController.swift": [1549190892, 0]
   "/Users/aishwaryapattar/OneDrive - Imperial College London/Year 4/Project/4. App Development/TBI_Tracker/TBI_Tracker/AppDelegate.swift": [1548952041, 0]
-  "/Users/aishwaryapattar/OneDrive - Imperial College London/Year 4/Project/4. App Development/TBI_Tracker/TBI_Tracker/FirstViewController.swift": [1548952041, 0]
+  "/Users/aishwaryapattar/OneDrive - Imperial College London/Year 4/Project/4. App Development/TBI_Tracker/TBI_Tracker/PotassiumViewController.swift": [1549190832, 0]
+  "/Users/aishwaryapattar/OneDrive - Imperial College London/Year 4/Project/4. App Development/TBI_Tracker/TBI_Tracker/ChemicalCompositionViewController.swift": [9223372036, 854775807]
+  "/Users/aishwaryapattar/OneDrive - Imperial College London/Year 4/Project/4. App Development/TBI_Tracker/TBI_Tracker/LoginViewController.swift": [1549191013, 0]
+  "/Users/aishwaryapattar/OneDrive - Imperial College London/Year 4/Project/4. App Development/TBI_Tracker/TBI_Tracker/LactateViewController.swift": [1549190960, 0]

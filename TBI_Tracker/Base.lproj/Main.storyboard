@@ -13,7 +13,7 @@
         <!--K+-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="K+" id="9pv-A4-QxB" customClass="FirstViewController" customModule="TBI_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="K+" id="9pv-A4-QxB" customClass="PotassiumViewController" customModule="TBI_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN" userLabel="K+View">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,12 +46,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2273" y="-685"/>
+            <point key="canvasLocation" x="2997" y="-715"/>
         </scene>
         <!--Glucose-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController title="Glucose" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="TBI_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Glucose" id="8rJ-Kc-sve" customClass="GlucoseViewController" customModule="TBI_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW" userLabel="GlucoseView">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,7 @@
         <!--Lactate-->
         <scene sceneID="lmZ-00-o2e">
             <objects>
-                <viewController title="Lactate" id="Yhn-1k-knS" sceneMemberID="viewController">
+                <viewController title="Lactate" id="Yhn-1k-knS" customClass="LactateViewController" customModule="TBI_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Dd-Fs-cGM" userLabel="LactateView">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,12 +122,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jx5-h2-AKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2273" y="692"/>
+            <point key="canvasLocation" x="2997" y="728"/>
         </scene>
         <!--Login-->
         <scene sceneID="Eyc-KM-XB2">
             <objects>
-                <viewController title="Login" id="gvJ-ih-RlU" sceneMemberID="viewController">
+                <viewController title="Login" id="gvJ-ih-RlU" customClass="LoginViewController" customModule="TBI_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tlk-Sf-iec">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,7 +219,7 @@
         <!--chemComp-->
         <scene sceneID="1ZD-4G-exe">
             <objects>
-                <viewController title="allPlots" id="qIy-38-aBU" userLabel="chemComp" sceneMemberID="viewController">
+                <viewController title="allPlots" id="qIy-38-aBU" userLabel="chemComp" customClass="ChemicalCompositionViewController" customModule="TBI_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fiN-xf-wQG">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
