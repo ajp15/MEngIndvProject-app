@@ -11,11 +11,17 @@ import Charts
 
 class LactateViewController: UIViewController {
 
+    @IBOutlet weak var lactateLineChartView: LineChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // TODO: load graph
     }
+    
+    // TODO: get lactate array from chemical composition view
+    
+    // TODO: plot graph
     
 
     /*
