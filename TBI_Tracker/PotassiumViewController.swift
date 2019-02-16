@@ -11,11 +11,17 @@ import Charts
 
 class PotassiumViewController: UIViewController {
 
+    @IBOutlet weak var kLineChartView: LineChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // TODO: load graph
     }
-
+    
+    // TODO: get K+ array from ChemicalCompositionViewController
+    
+    // TODO: plot K+ graph
 
 }
 
