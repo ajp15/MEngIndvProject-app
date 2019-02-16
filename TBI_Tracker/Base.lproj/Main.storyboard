@@ -225,16 +225,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sq3-lL-WA6">
-                                <rect key="frame" x="0.0" y="90" width="1112" height="744"/>
+                                <rect key="frame" x="20" y="90" width="1072" height="724"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemical Composition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VV2-eh-l7A">
-                                        <rect key="frame" x="0.0" y="0.0" width="1112" height="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1072" height="42"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTp-O8-ntC">
-                                        <rect key="frame" x="0.0" y="42" width="1112" height="702"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTp-O8-ntC" userLabel="chemCompGraph" customClass="LineChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="42" width="1072" height="682"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -242,9 +242,9 @@
                         <color key="backgroundColor" red="0.83529411764705885" green="0.94901960784313721" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Sq3-lL-WA6" firstAttribute="top" secondItem="1lz-MO-QJH" secondAttribute="top" constant="20" id="0po-xD-CWG"/>
-                            <constraint firstItem="1lz-MO-QJH" firstAttribute="bottom" secondItem="Sq3-lL-WA6" secondAttribute="bottom" id="3ex-iW-c0A"/>
-                            <constraint firstItem="Sq3-lL-WA6" firstAttribute="leading" secondItem="1lz-MO-QJH" secondAttribute="leading" id="TO2-vq-iUj"/>
-                            <constraint firstItem="1lz-MO-QJH" firstAttribute="trailing" secondItem="Sq3-lL-WA6" secondAttribute="trailing" id="YXA-1z-rek"/>
+                            <constraint firstItem="1lz-MO-QJH" firstAttribute="bottom" secondItem="Sq3-lL-WA6" secondAttribute="bottom" constant="20" id="3ex-iW-c0A"/>
+                            <constraint firstItem="Sq3-lL-WA6" firstAttribute="leading" secondItem="1lz-MO-QJH" secondAttribute="leading" constant="20" id="TO2-vq-iUj"/>
+                            <constraint firstItem="1lz-MO-QJH" firstAttribute="trailing" secondItem="Sq3-lL-WA6" secondAttribute="trailing" constant="20" id="YXA-1z-rek"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1lz-MO-QJH"/>
                     </view>
@@ -258,6 +258,9 @@
                             <barButtonItem systemItem="refresh" id="sXo-Qw-C3V"/>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="chemCompLineChartView" destination="TTp-O8-ntC" id="IAh-xA-63u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMI-Mc-SEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

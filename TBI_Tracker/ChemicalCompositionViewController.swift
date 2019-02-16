@@ -11,11 +11,19 @@ import Charts
 
 class ChemicalCompositionViewController: UIViewController {
 
+    @IBOutlet weak var chemCompLineChartView: LineChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // TODO: load graph.
+            // cal function that plots data
     }
+    
+    // TODO: receive data from bluetooth module
+        // separate data into K+, glucose, lactate arrays
+    
+    // TODO: plot data onto graph
     
 
     /*
