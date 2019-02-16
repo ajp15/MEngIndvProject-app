@@ -11,11 +11,17 @@ import Charts
 
 class GlucoseViewController: UIViewController {
 
+    @IBOutlet weak var glucoseLineChartView: LineChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // TODO: load graph
     }
-
+    
+    // TODO: receive gluocse array from ChemicalCompositionViewController
+    
+    // TODO: plot graph
 
 }
 
