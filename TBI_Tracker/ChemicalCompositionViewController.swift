@@ -63,24 +63,46 @@ class ChemicalCompositionViewController: UIViewController {
         // TODO: automatically refresh graph every 15 seconds
     }
     
+    
+    
 
     func setChartValues() {
         
-        // sets x and y values
-        let entries = (0..<Karr.count).map { (i) -> ChartDataEntry in
+        //TODO: multiple graphs plotted on one
+        
+        // sets x and y values for K+
+        let entriesK = (0..<Karr.count).map { (i) -> ChartDataEntry in
             let Kval = Karr[i]
             let timeValK = timeK[i]
             return ChartDataEntry(x: timeValK, y: Kval)
         }
+        let setK = LineChartDataSet(values: entriesK, label: "[K+]")
         
-        let set = LineChartDataSet(values: entries, label: "[K+]")
-        let data = LineChartData(dataSet: set)
+        // sets x and y values for Glucose
+        let entriesG = (0..<Garr.count).map { (i) -> ChartDataEntry in
+            let Gval = Garr[i]
+            let timeValG = timeG[i]
+            return ChartDataEntry(x: timeValG, y: Gval)
+        }
+        let setG = LineChartDataSet(values: entriesG, label: "[Glucose]")
+        
+        // sets x and y values for Lactate
+        let entriesL = (0..<Larr.count).map { (i) -> ChartDataEntry in
+            let Lval = Larr[i]
+            let timeValL = timeL[i]
+            return ChartDataEntry(x: timeValL, y: Lval)
+        }
+        let setL = LineChartDataSet(values: entriesL, label: "[Lactate]")
+        
+        
+        let dataSets = [setK, setG, setL]
+        let data = LineChartData(dataSets: dataSets)
         self.chemCompLineChartView.data = data
         
         // modify line plot
-        set.drawCirclesEnabled = false
-        set.drawValuesEnabled = false
-        set.lineWidth = 2
+        setK.drawCirclesEnabled = false
+        setK.drawValuesEnabled = false
+        setK.lineWidth = 2
     }
 }
 
