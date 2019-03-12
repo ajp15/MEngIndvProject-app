@@ -196,11 +196,13 @@ SWIFT_CLASS("_TtC11TBI_Tracker11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class LineChartView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC11TBI_Tracker33ChemicalCompositionViewController")
 @interface ChemicalCompositionViewController : UIViewController
+@property (nonatomic, weak) IBOutlet LineChartView * _Null_unspecified chemCompLineChartView;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -209,6 +211,7 @@ SWIFT_CLASS("_TtC11TBI_Tracker33ChemicalCompositionViewController")
 
 SWIFT_CLASS("_TtC11TBI_Tracker21GlucoseViewController")
 @interface GlucoseViewController : UIViewController
+@property (nonatomic, weak) IBOutlet LineChartView * _Null_unspecified glucoseLineChartView;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -217,6 +220,7 @@ SWIFT_CLASS("_TtC11TBI_Tracker21GlucoseViewController")
 
 SWIFT_CLASS("_TtC11TBI_Tracker21LactateViewController")
 @interface LactateViewController : UIViewController
+@property (nonatomic, weak) IBOutlet LineChartView * _Null_unspecified lactateLineChartView;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -233,6 +237,7 @@ SWIFT_CLASS("_TtC11TBI_Tracker19LoginViewController")
 
 SWIFT_CLASS("_TtC11TBI_Tracker23PotassiumViewController")
 @interface PotassiumViewController : UIViewController
+@property (nonatomic, weak) IBOutlet LineChartView * _Null_unspecified kLineChartView;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
