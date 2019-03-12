@@ -10,6 +10,14 @@ import UIKit
 import Charts
 import CoreBluetooth
 
+// initialise arrays
+var timeK : [Double] = []
+var Kvals : [Double] = []
+var timeG : [Double] = []
+var Gvals : [Double] = []
+var timeL : [Double] = []
+var Lvals : [Double] = []
+
 class ChemicalCompositionViewController: UIViewController {
 
     // IBOutlets
@@ -141,9 +149,9 @@ extension ChemicalCompositionViewController: CBPeripheralDelegate {
                 
                 rxString = ASCIIstring as String
                 print(rxString)
-                print(rxString.count)
-                //let char = rxString.last
-                //print(char?.unicodeScalars)
+                    /*print(rxString.count)
+                    let char = rxString.last
+                    print(char?.unicodeScalars)*/
                 
                 
                 /*characteristicASCIIValue = ASCIIstring
@@ -162,34 +170,62 @@ extension ChemicalCompositionViewController: CBPeripheralDelegate {
                 
                 //remove first and last character
                 rxString.remove(at: rxString.startIndex)
-                rxString.remove(at: rxString.endIndex)
-                print(rxString)
-                print(rxString.count)
+                rxString.remove(at: rxString.index(before: rxString.endIndex))
+                    /*print(rxString)
+                    print(rxString.count)*/
                 
-                // extract time stamp and the K value as separate strings
+                // extract time stamp
+                let space = rxString.firstIndex(of: " ") ?? rxString.endIndex
+                let time = rxString[..<space]
+                let val = rxString.dropFirst(time.count + 1)
+                print(time)
+                print(val)
                 
                 // append the values to corresponding array
-                
+                timeK.append(Double(time)!)
+                Kvals.append(Double(val)!)
+                print(timeK)
+                print(Kvals)
             }
             // Glucose values
             else if rxString.first == "G" {
                 
                 //remove first and last character
                 rxString.remove(at: rxString.startIndex)
-                rxString.remove(at: rxString.endIndex)
-                print(rxString)
-                print(rxString.count)
+                rxString.remove(at: rxString.index(before: rxString.endIndex))
+
+                // extract time stamp
+                let space = rxString.firstIndex(of: " ") ?? rxString.endIndex
+                let time = rxString[..<space]
+                let val = rxString.dropFirst(time.count + 1)
+                print(time)
+                print(val)
                 
+                // append the values to corresponding array
+                timeG.append(Double(time)!)
+                Gvals.append(Double(val)!)
+                print(timeG)
+                print(Gvals)
             }
             // Lactate values
             else if rxString.first == "L" {
                 
                 //remove first and last character
                 rxString.remove(at: rxString.startIndex)
-                rxString.remove(at: rxString.endIndex)
-                print(rxString)
-                print(rxString.count)
+                rxString.remove(at: rxString.index(before: rxString.endIndex))
                 
+                // extract time stamp
+                let space = rxString.firstIndex(of: " ") ?? rxString.endIndex
+                let time = rxString[..<space]
+                let val = rxString.dropFirst(time.count + 1)
+                print(time)
+                print(val)
+                
+                // append the values to corresponding array
+                timeL.append(Double(time)!)
+                Lvals.append(Double(val)!)
+                print(timeL)
+                print(Lvals)
             }
             
             
