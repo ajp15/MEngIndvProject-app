@@ -12,17 +12,20 @@ import CoreBluetooth
 
 // initialise arrays
 var timeK : [Double] = []
-var Kvals : [Double] = []
+var Karr : [Double] = []
 var timeG : [Double] = []
-var Gvals : [Double] = []
+var Garr : [Double] = []
 var timeL : [Double] = []
-var Lvals : [Double] = []
+var Larr : [Double] = []
 
 class ChemicalCompositionViewController: UIViewController {
 
     // IBOutlets
     @IBOutlet weak var chemCompLineChartView: LineChartView!
-    // add refresh button functionality in if it's not already predetermined
+    @IBAction func refreshButton(_ sender: Any) {
+        viewDidLoad()
+    }
+    
     
     // Initialise variables
     var centralManager: CBCentralManager!
@@ -38,17 +41,49 @@ class ChemicalCompositionViewController: UIViewController {
         
         super.viewDidLoad()
         
-        // TODO: load graph.
-            // call function that plots data
+        // initialise graph
+        setChartValues()
+        
+        // makes bubbles appear when you click on data
+        let marker:BalloonMarker = BalloonMarker(color: UIColor(white: 180/255, alpha: 1),
+                                                 font: .systemFont(ofSize: 12),
+                                                 textColor: .white,
+                                                 insets: UIEdgeInsets(top: 8, left: 8, bottom: 20, right: 8))
+        marker.chartView = chemCompLineChartView
+        marker.minimumSize = CGSize(width: 80, height: 40)
+        chemCompLineChartView.marker = marker
+        
+        // modify the LineChartView
+        self.chemCompLineChartView.dragYEnabled = false
+        self.chemCompLineChartView.rightAxis.enabled = false
+        self.chemCompLineChartView.backgroundColor = .white
+        
+        //TODO: titles and axes labels to graphs
+        
+        // TODO: automatically refresh graph every 15 seconds
     }
     
-    // TODO: receive data from bluetooth module
-        // separate data into K+, glucose, lactate arrays
-    
-    // TODO: plot data onto graph
-    
 
+    func setChartValues() {
+        
+        // sets x and y values
+        let entries = (0..<Karr.count).map { (i) -> ChartDataEntry in
+            let Kval = Karr[i]
+            let timeValK = timeK[i]
+            return ChartDataEntry(x: timeValK, y: Kval)
+        }
+        
+        let set = LineChartDataSet(values: entries, label: "[K+]")
+        let data = LineChartData(dataSet: set)
+        self.chemCompLineChartView.data = data
+        
+        // modify line plot
+        set.drawCirclesEnabled = false
+        set.drawValuesEnabled = false
+        set.lineWidth = 2
+    }
 }
+
 
 
 // Establish BLE Communication
@@ -163,7 +198,7 @@ extension ChemicalCompositionViewController: CBPeripheralDelegate {
         // categorise NSString
         // check is last character is \r\n to ensure string is not fragmented. if fragmented the value is discarded
         
-        if rxString.last == "\r\n" {
+        if rxString.last == "\r\n" && rxString.count > 5 {
 
             // store the first letter
             let firstLetter = rxString.first
@@ -180,24 +215,14 @@ extension ChemicalCompositionViewController: CBPeripheralDelegate {
             // store in corresponding array depending on firstLetter
             if firstLetter == "K" {
                 timeK.append(Double(time)!/1000)
-                Kvals.append(Double(val)!)
-                print(timeK)
+                Karr.append(Double(val)!)
             } else if firstLetter == "G" {
                 timeG.append(Double(time)!/1000)
-                Gvals.append(Double(val)!)
+                Garr.append(Double(val)!)
             } else if firstLetter == "L" {
                 timeL.append(Double(time)!/1000)
-                Lvals.append(Double(val)!)
+                Larr.append(Double(val)!)
             }
         }
-        
-        
-        
-        //let val = characteristicASCIIValue.doubleValue
-        //values.append(val)
-        //print(values)
-        //print(temp)
-        
     }
 }
-

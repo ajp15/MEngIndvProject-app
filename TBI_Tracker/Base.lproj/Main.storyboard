@@ -264,7 +264,11 @@
                                     <segue destination="49e-Tb-3d3" kind="show" id="7pX-8x-xlJ"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="refresh" id="sXo-Qw-C3V"/>
+                            <barButtonItem systemItem="refresh" id="sXo-Qw-C3V">
+                                <connections>
+                                    <action selector="refreshButton:" destination="qIy-38-aBU" id="5rd-sO-dbT"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
