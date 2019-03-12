@@ -148,8 +148,8 @@ extension ChemicalCompositionViewController: CBPeripheralDelegate {
             if let ASCIIstring = NSString(data: characteristic.value!, encoding: String.Encoding.utf8.rawValue) {
                 
                 rxString = ASCIIstring as String
-                print(rxString)
-                    /*print(rxString.count)
+                    /*print(rxString)
+                    print(rxString.count)
                     let char = rxString.last
                     print(char?.unicodeScalars)*/
                 
@@ -164,71 +164,31 @@ extension ChemicalCompositionViewController: CBPeripheralDelegate {
         // check is last character is \r\n to ensure string is not fragmented. if fragmented the value is discarded
         
         if rxString.last == "\r\n" {
+
+            // store the first letter
+            let firstLetter = rxString.first
             
-            // Potassium values
-            if rxString.first == "K" {
-                
-                //remove first and last character
-                rxString.remove(at: rxString.startIndex)
-                rxString.remove(at: rxString.index(before: rxString.endIndex))
-                    /*print(rxString)
-                    print(rxString.count)*/
-                
-                // extract time stamp
-                let space = rxString.firstIndex(of: " ") ?? rxString.endIndex
-                let time = rxString[..<space]
-                let val = rxString.dropFirst(time.count + 1)
-                print(time)
-                print(val)
-                
-                // append the values to corresponding array
-                timeK.append(Double(time)!)
+            // remove first and last character
+            rxString.remove(at: rxString.startIndex)
+            rxString.remove(at: rxString.index(before: rxString.endIndex))
+            
+            // extract time stamp and values
+            let space = rxString.firstIndex(of: " ") ?? rxString.endIndex
+            let time = rxString[..<space]
+            let val = rxString.dropFirst(time.count + 1)
+            
+            // store in corresponding array depending on firstLetter
+            if firstLetter == "K" {
+                timeK.append(Double(time)!/1000)
                 Kvals.append(Double(val)!)
                 print(timeK)
-                print(Kvals)
-            }
-            // Glucose values
-            else if rxString.first == "G" {
-                
-                //remove first and last character
-                rxString.remove(at: rxString.startIndex)
-                rxString.remove(at: rxString.index(before: rxString.endIndex))
-
-                // extract time stamp
-                let space = rxString.firstIndex(of: " ") ?? rxString.endIndex
-                let time = rxString[..<space]
-                let val = rxString.dropFirst(time.count + 1)
-                print(time)
-                print(val)
-                
-                // append the values to corresponding array
-                timeG.append(Double(time)!)
+            } else if firstLetter == "G" {
+                timeG.append(Double(time)!/1000)
                 Gvals.append(Double(val)!)
-                print(timeG)
-                print(Gvals)
-            }
-            // Lactate values
-            else if rxString.first == "L" {
-                
-                //remove first and last character
-                rxString.remove(at: rxString.startIndex)
-                rxString.remove(at: rxString.index(before: rxString.endIndex))
-                
-                // extract time stamp
-                let space = rxString.firstIndex(of: " ") ?? rxString.endIndex
-                let time = rxString[..<space]
-                let val = rxString.dropFirst(time.count + 1)
-                print(time)
-                print(val)
-                
-                // append the values to corresponding array
-                timeL.append(Double(time)!)
+            } else if firstLetter == "L" {
+                timeL.append(Double(time)!/1000)
                 Lvals.append(Double(val)!)
-                print(timeL)
-                print(Lvals)
             }
-            
-            
         }
         
         
