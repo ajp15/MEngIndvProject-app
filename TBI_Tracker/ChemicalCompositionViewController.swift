@@ -17,6 +17,9 @@ var timeG : [Double] = []
 var Garr : [Double] = []
 var timeL : [Double] = []
 var Larr : [Double] = []
+let Kcolour : [NSUIColor] = [UIColor(red: CGFloat(1), green: CGFloat(0), blue: CGFloat(0), alpha: 1)]
+let Gcolour : [NSUIColor] = [UIColor(red: CGFloat(0), green: CGFloat(1), blue: CGFloat(0), alpha: 1)]
+let Lcolour : [NSUIColor] = [UIColor(red: CGFloat(0), green: CGFloat(0), blue: CGFloat(1), alpha: 1)]
 
 class ChemicalCompositionViewController: UIViewController {
 
@@ -63,8 +66,6 @@ class ChemicalCompositionViewController: UIViewController {
         // TODO: automatically refresh graph every 15 seconds
     }
     
-    
-    
 
     func setChartValues() {
         
@@ -94,15 +95,26 @@ class ChemicalCompositionViewController: UIViewController {
         }
         let setL = LineChartDataSet(values: entriesL, label: "[Lactate]")
         
-        
+        // set line features
         let dataSets = [setK, setG, setL]
         let data = LineChartData(dataSets: dataSets)
         self.chemCompLineChartView.data = data
         
-        // modify line plot
+        // modify line plots
         setK.drawCirclesEnabled = false
         setK.drawValuesEnabled = false
         setK.lineWidth = 2
+        setK.colors = Kcolour
+        
+        setG.drawCirclesEnabled = false
+        setG.drawValuesEnabled = false
+        setG.lineWidth = 2
+        setG.colors = Gcolour
+        
+        setL.drawCirclesEnabled = false
+        setL.drawValuesEnabled = false
+        setL.lineWidth = 2
+        setL.colors = Lcolour
     }
 }
 

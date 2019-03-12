@@ -9,6 +9,8 @@
 import UIKit
 import Charts
 
+let Gcolour : [NSUIColor] = [UIColor(red: CGFloat(0), green: CGFloat(1), blue: CGFloat(0), alpha: 1)]
+
 class GlucoseViewController: UIViewController {
 
     @IBOutlet weak var glucoseLineChartView: LineChartView!

@@ -9,6 +9,8 @@
 import UIKit
 import Charts
 
+//let Lcolour : [NSUIColor] = [UIColor(red: CGFloat(0), green: CGFloat(0), blue: CGFloat(1), alpha: 1)]
+
 class LactateViewController: UIViewController {
 
     @IBOutlet weak var lactateLineChartView: LineChartView!
@@ -33,5 +35,4 @@ class LactateViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
