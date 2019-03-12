@@ -142,6 +142,10 @@ extension ChemicalCompositionViewController: CBPeripheralDelegate {
                 rxString = ASCIIstring as String
                 print(rxString)
                 print(rxString.count)
+                //let char = rxString.last
+                //print(char?.unicodeScalars)
+                
+                
                 /*characteristicASCIIValue = ASCIIstring
                 print("Value Recieved: \((characteristicASCIIValue as String))")*/
                 NotificationCenter.default.post(name:NSNotification.Name(rawValue: "Notify"), object: nil)
@@ -149,19 +153,42 @@ extension ChemicalCompositionViewController: CBPeripheralDelegate {
         }
         
         // categorise NSString
-        // check is last character is new line to ensure string is not fragmented. if fragmented the value is discarded
-        if rxString.last == "\n" {
+        // check is last character is \r\n to ensure string is not fragmented. if fragmented the value is discarded
+        
+        if rxString.last == "\r\n" {
             
             // Potassium values
             if rxString.first == "K" {
+                
+                //remove first and last character
+                rxString.remove(at: rxString.startIndex)
+                rxString.remove(at: rxString.endIndex)
+                print(rxString)
+                print(rxString.count)
+                
+                // extract time stamp and the K value as separate strings
+                
+                // append the values to corresponding array
                 
             }
             // Glucose values
             else if rxString.first == "G" {
                 
+                //remove first and last character
+                rxString.remove(at: rxString.startIndex)
+                rxString.remove(at: rxString.endIndex)
+                print(rxString)
+                print(rxString.count)
+                
             }
             // Lactate values
             else if rxString.first == "L" {
+                
+                //remove first and last character
+                rxString.remove(at: rxString.startIndex)
+                rxString.remove(at: rxString.endIndex)
+                print(rxString)
+                print(rxString.count)
                 
             }
             
