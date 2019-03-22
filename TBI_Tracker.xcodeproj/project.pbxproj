@@ -32,6 +32,7 @@
 		329285FC2203596C0009A791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		329285FF2203596C0009A791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		329286012203596C0009A791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A807342243A6B700DCCA40 /* TBI_Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TBI_Tracker.entitlements; sourceTree = "<group>"; };
 		32BC4C7622368BBB00BDB677 /* UUIDKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDKey.swift; sourceTree = "<group>"; };
 		32C2B7B02206FEB1004E1A5A /* LactateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LactateViewController.swift; sourceTree = "<group>"; };
 		32C2B7B22206FEE5004E1A5A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		329285F2220359690009A791 /* TBI_Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				32A807342243A6B700DCCA40 /* TBI_Tracker.entitlements */,
 				329285F3220359690009A791 /* AppDelegate.swift */,
 				32C2B7B22206FEE5004E1A5A /* LoginViewController.swift */,
 				32C2B7B42206FF22004E1A5A /* ChemicalCompositionViewController.swift */,
@@ -140,6 +142,17 @@
 				TargetAttributes = {
 					329285EF220359690009A791 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -380,6 +393,7 @@
 			baseConfigurationReference = 108932FE77487BC61F193BC7 /* Pods-TBI_Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQ93LA4599;
 				INFOPLIST_FILE = TBI_Tracker/Info.plist;
@@ -389,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aishwarya.TBI-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -399,6 +414,7 @@
 			baseConfigurationReference = 455284B1697C0D54B21C1E08 /* Pods-TBI_Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQ93LA4599;
 				INFOPLIST_FILE = TBI_Tracker/Info.plist;
@@ -408,6 +424,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aishwarya.TBI-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

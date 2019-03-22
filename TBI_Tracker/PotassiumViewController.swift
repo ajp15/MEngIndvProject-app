@@ -9,7 +9,7 @@
 import UIKit
 import Charts
 
-let Kcolour : [NSUIColor] = [UIColor(red: CGFloat(1), green: CGFloat(0), blue: CGFloat(0), alpha: 1)]
+//let Kcolour : [NSUIColor] = [UIColor(red: CGFloat(1), green: CGFloat(0), blue: CGFloat(0), alpha: 1)]
 
 class PotassiumViewController: UIViewController {
 
